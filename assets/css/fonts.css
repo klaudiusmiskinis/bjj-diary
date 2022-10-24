@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Circular Bold";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/CircularSp-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circular Book";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/CircularSp-Book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circular Title Black";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/CircularSpTitle-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circular Title Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/CircularSpTitle-Bold.woff2") format("woff2");
+}
