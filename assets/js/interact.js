@@ -1,5 +1,3 @@
-const SLASH = "/";
-
 class InteractDaily {
   constructor(dailies) {
     this.dailies = dailies;
@@ -16,9 +14,14 @@ class InteractDaily {
         this.splittedYears.push(year);
       }
       if (!this.splittedMonths.includes(month)) {
+        this.splittedMonths.push(month);
         this.splittedYears.push(month);
       }
     });
+  }
+  
+  getMonthElements(date) {
+    return "<p></p>";
   }
 
   dateExists(month, year) {

@@ -1,5 +1,11 @@
 @import url("./fonts.css");
 
+:root {
+  --dark: #181818;
+  --grey: #b6b6b6;
+  --red: #D70A0A;
+}
+
 h1,
 h2,
 h3,
@@ -19,11 +25,21 @@ html, body {
 }
 
 .bg-custom {
-  background-color: #181818;
+  background-color: var(--dark);
 }
 
 .bg-daily {
-  background-color: #267DDF;
+  background-color: var(--red);
+}
+
+.text-grey {
+  color: var(--grey);
+}
+
+.stuck {
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden
 }
 
 
@@ -40,5 +56,11 @@ html, body {
 @media (max-height: 745.6px) {
   .dynamic-height {
       height: 100;
+  }
+}
+
+@media (max-width: 1135px) {
+  body {
+      background-color: var(--dark);
   }
 }
