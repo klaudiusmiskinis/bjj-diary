@@ -15,10 +15,11 @@ class InteractDaily {
       }
       if (!this.splittedMonths.includes(month)) {
         this.splittedMonths.push(month);
+        this.splittedYears.push(month);
       }
     });
   }
-
+  
   getMonthElements(date) {
     return "<p></p>";
   }

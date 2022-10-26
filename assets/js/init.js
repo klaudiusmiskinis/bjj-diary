@@ -27,6 +27,8 @@ function menuYears(dailies) {
   </li>"`;
   });
   return render;
+    dailies = new InteractDaily(dailies);
+    dailies.splitDates();
 }
 
 const req = new XMLHttpRequest();
