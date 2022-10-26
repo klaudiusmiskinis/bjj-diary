@@ -1,11 +1,10 @@
-// relative path to the desired directory
 const file = "assets/data/date.json";
 var dailies;
 
 
 function init() {
     dailies = new InteractDaily(dailies);
-    dailies.splitDate();
+    dailies.splitDates();
 }
 
 const req = new XMLHttpRequest();
