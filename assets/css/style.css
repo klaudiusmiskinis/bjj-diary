@@ -3,25 +3,37 @@
 :root {
   --dark: #181818;
   --grey: #b6b6b6;
-  --red: #D70A0A;
+  --greyh: #7a7a7a;
+  --red: #d70a0a;
+  --green: #039d48;
+  --blue: #267ddf;
+  --purple: #8563fa;
+  --brown: #866f56;
+  --gold: #987225;
+  --violet: #c873d3;
+  --white: #d9d9d9;
+  --orange: #db631e;
+  --clay: #e24639;
+  --pink: #f20184;
+  --marine: #029f7c;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Circular Title Bold", sans-serif;
-}
-
-a, p, li, ul, span {
+*,
+html,
+body {
   font-family: "Circular Bold";
-}
-
-html, body {
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: var(--grey);
+  transition: 0.5s;
+}
+
+a:hover {
+  color: var(--greyh);
+  transition: 0.5s;
 }
 
 .bg-custom {
@@ -39,28 +51,36 @@ html, body {
 .stuck {
   position: relative;
   overflow-y: scroll;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
-
-.break-text{
+.break-text {
   font-size: 3rem;
   width: 900px;
-  width: -moz-min-content;
-  display: table-caption;
-  display: -ms-grid;
   -ms-grid-columns: min-content;
+  display: table-caption;
+  width: -moz-min-content;
+  display: -ms-grid;
   line-height: 1.6;
+}
+
+.responsive-show {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--dark);
+}
+
+.no-decoration {
+  text-decoration: none;
 }
 
 @media (max-height: 745.6px) {
   .dynamic-height {
-      height: 100;
+    height: 100;
   }
 }
 
 @media (max-width: 1135px) {
-  body {
-      background-color: var(--dark);
-  }
 }
