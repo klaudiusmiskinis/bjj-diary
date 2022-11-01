@@ -14,11 +14,16 @@
     <title>Self Diary</title>
   </head>
   <body>
-    <div class="responsive-show"></div>
     <nav class="navbar bg-custom shadow-sm">
       <div class="container-fluid pt-2 ps-3">
         <a class="navbar-brand text-light" href="./index.html"> Self Diary </a>
-        <a class="text-light no-decoration" id="date">04/08/2022</a>
+        <a class="text-light no-decoration" id="date"
+          ><button onclick="previousDate()" id="nextDate">
+            <i class="arrow left"></i>
+          </button>
+          <button onclick="nextDate()" id="previousDate">
+            <i class="arrow right"></i></button
+        ></a>
       </div>
     </nav>
     <div class="row g-0">
